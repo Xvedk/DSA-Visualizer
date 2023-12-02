@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="icon" href="fi.png" type="fav icon">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#D0A2F7,#B931FC);
+
+}
+
+
+.box .eye{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.2),
+                inset 0 0 15px #B931FC,
+                inset 0 0 25px #B931FC;
+
+}
+.box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+
+    border: 10px solid #2196f3;
+    box-sizing: border-box;
+
+}
+.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+#loginButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #9400FF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="box">
+            <div class="eye" ></div>
+            <div class="eye" ></div>
+        </div>
+        <button id="loginButton">Login</button>
+        </div>
+        <script>
+            document.querySelector('body').addEventListener('mousemove',eyeball);
+            function eyeball(){
+                const eye= document.querySelectorAll('.eye');
+                eye.forEach(function(eye){
+                    let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                    let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                    
+                    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                    let rotation = (radian*(180 / Math.PI) * -1) + 270;
+                    eye.style.transform="rotate("+rotation+"deg)"
+                    
+
+                });
+            }   
+            // JavaScript to handle button click and open a new window
+        document.getElementById('loginButton').addEventListener('click', function () {
+            // Replace 'login.html' with the actual name of your login page
+            var loginPageURL = "front.html";
+
+            // Open a new window
+            window.open(loginPageURL, '_blank');
+        });
+        </script>
+
+    </body>
+</html>

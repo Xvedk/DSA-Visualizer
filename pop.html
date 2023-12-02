@@ -1,0 +1,40 @@
+<!-- chatbot-popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="fi.png" type="fav icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your CSS styles for the chatbot popup here */
+        /* You can style the popup appearance, position, etc. */
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #chatbot-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: violet;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Chatbot Popup</title>
+</head>
+<body>
+    <div id="chatbot-popup" onclick="openChatbotPage()">
+        <h3>Chat with Assistant</h3>
+    </div>
+
+    <script>
+        function openChatbotPage() {
+            window.open('chatbot.html', '_blank', 'width=600,height=400');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Quick Sort
+        </title>
+        <link rel="icon" href="fi.png" type="fav icon">
+<style>
+    body {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            border: 10px solid #610C9F; /* Border color */
+            border-radius: 20px; /* Border radius for outer circle */
+            overflow: hidden;
+    }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: blueviolet;
+            text-align: center;
+        }
+        h2{
+            color: purple;
+            text-align: justify;
+
+        }
+
+        p {
+            color: purple;
+            text-align: justify;
+        }
+        ul {
+            color: purple;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            color: purple;
+            margin-bottom: 10px;
+        }
+        .circle-bullet {
+            list-style-type: circle;
+        }
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Quick Sort Algorithm</h1>
+            <p>In this article, we will discuss the Quicksort Algorithm. The working procedure of Quicksort is also simple. This article will be very helpful and interesting to students as they might face quicksort as a question in their examinations. So, it is important to discuss the topic.</p>
+        
+        <p>Sorting is a way of arranging items in a systematic manner. Quicksort is the widely used sorting algorithm that makes n log n comparisons in the average case for sorting an array of n elements. It is a faster and highly efficient sorting algorithm. This algorithm follows the divide and conquer approach. Divide and conquer is a technique of breaking down the algorithms into subproblems, then solving the subproblems, and combining the results back together to solve the original problem.</p>
+
+        <ul>
+            <li><strong>Divide: </strong> In Divide, first pick a pivot element. After that, partition or rearrange the array into two sub-arrays such that each element in the left sub-array is less than or equal to the pivot element and each element in the right sub-array is larger than the pivot element.</li>
+            <li><strong>Conquer:</strong>  Recursively, sort two subarray with Quicksort.</li>
+            <li><strong>Combine:</strong> Combine the already sorted array.</li>
+        </ul>
+        <p>Quicksort picks an element as pivot, and then it partitions the given array around the picked pivot element. In quick sort, a large array is divided into two arrays in which one holds values that are smaller than the specified value (Pivot), and another array holds the values that are greater than the pivot.</p>
+        <p>After that, left and right sub-arrays are also partitioned using the same approach. It will continue until the single element remains in the sub-array.</p>
+        <h2>Choosing the pivot</h2>
+        <p>Picking a good pivot is necessary for the fast implementation of quicksort. However, it is typical to determine a good pivot. Some of the ways of choosing a pivot are as follows -</p>
+        <ul class="circle-bullet">
+            <li>Pivot can be random, i.e., select the random pivot from the given array.</li>
+            <li>Pivot can either be the rightmost element of the leftmost element of the given array.</li>
+            <li>Select median as the pivot element.</li>
+        </ul>
+    </div>
+    </body>
+</html>

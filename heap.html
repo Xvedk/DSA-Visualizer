@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Heap Sort Algo</title>
+        <link rel="icon" href="fi.png" type="fav icon">
+        <style>
+            body {
+        background-color: white;
+        padding: 20px;
+        font-family: 'Arial', sans-serif;
+        border: 10px solid #610C9F; /* Border color */
+            border-radius: 20px; /* Border radius for outer circle */
+            overflow: hidden;
+    }
+    h1,h2 {
+        color: blueviolet;
+        text-align: center;}
+    p {
+        color: purple;
+        text-align: justify;
+    }
+    ul,h3,li{
+        color: purple;
+    }
+        </style>
+    </head>
+    <body>
+        <h1>Heap Sort Algorithm</h1>
+        <p>Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure to build a heap and efficiently find the maximum (or minimum) element and repeatedly extract it from the heap. It has a time complexity of O(n log n) for the worst, average, and best cases.</p>
+        <p>Heap sort is an efficient and popular sorting algorithm. The heap sort concept is to "eliminate" the element from the heap part of the list one-by-one and insert them to the sorted part of the list. Before learning more about the heap sorting algorithm, let's discuss the heap data structure.
+        </p>
+        <p>It is an in-place algorithm, which means a fixed amount of memory is used to store the sorted list, or the memory size doesn't rely on the size of the preliminary list</p>
+        <h2>Working</h2>
+
+    <h3>Build Heap:</h3>
+    <ul>
+        <li>Build a binary heap from the input data.</li>
+        <li>The heap is a complete binary tree where the value of each node is greater than or equal to the values of its children.</li>
+    </ul>
+
+    <h3>Heapify:</h3>
+    <ul>
+        <li>Repeatedly remove the largest (for max heap) element from the heap.</li>
+        <li>Swap it with the last element in the heap (putting it in its final position).</li>
+    </ul>
+
+    <h3>Heap Size Reduction:</h3>
+    <ul>
+        <li>Reduce the size of the heap by one.</li>
+        <li>Repeat steps 2 and 3 until the heap is empty.</li>
+    </ul>  
+    </body>
+</html>

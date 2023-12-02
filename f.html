@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #974EC3;}
+
+            .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-bottom: 20px;}
+
+        button {
+            background: #9400FF;
+            
+            color: #FFFFFF;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #chatbot-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: lightgreen;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+
+       
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Website</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+   
+    <a href="#">Help</a>
+    <a href="#">Contact</a>
+</nav>
+<h1>Welcome to Smart Learning</h1>
+    <hr>
+    <div class="buttons-container">
+        <button onclick="window.open('insert.html', '_blank')">Insertion Sort</button>
+        <button onclick="window.open('bubble.html', '_blank')">Bubble Sort</button>
+        <button onclick="window.open('quick.html', '_blank')">Quick Sort</button>
+        <button onclick="window.open('merge.html', '_blank')">Merge Sort</button>
+        <button onclick="window.open('heap.html', '_blank')">Heap Sort</button>
+    </div>
+    <hr>
+    <a href="sorting.html" class="visualization-button" target="_blank">Visualizer</a>
+    <div id="chatbot-popup" onclick="openChatbotPage()">
+        <h3>Chat with Assistant</h3>
+    </div>
+    <script>
+        // ... (Your existing JavaScript functions)
+
+        // Function to open the chatbot.html in a new window
+        function openChatbotPage() {
+            window.open('chatbot.html', '_blank', 'width=600,height=400');
+        }
+    </script>
+<!-- The rest of your HTML content goes here -->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            insertion sort
+        </title>
+        <link rel="icon" href="fi.png" type="fav icon">
+        <style>
+            body {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            border: 10px solid #610C9F; /* Border color */
+            border-radius: 20px; /* Border radius for outer circle */
+            overflow: hidden;
+           
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: blueviolet;
+            text-align: center;
+        }
+
+        p {
+            color: purple;
+            text-align: justify;
+        }
+        ul {
+            color: purple;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            color: purple;
+            margin-bottom: 10px;
+        }
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <h1>Insertion Sort Algorithm</h1>
+            <p>Insertion sort works similar to the sorting of playing cards in hands. It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise, it will be placed at the left side. Similarly, all unsorted cards are taken and put in their exact place.</p>
+    
+            <p>The same approach is applied in insertion sort. The idea behind the insertion sort is that first take one element, iterate it through the sorted array. Although it is simple to use, it is not appropriate for large data sets as the time complexity of insertion sort in the average case and worst case is O(n2), where n is the number of items. Insertion sort is less efficient than the other sorting algorithms like heap sort, quick sort, merge sort, etc.</p>
+            <p>Algorithm for Insertion Sort:</p>
+
+            <ul>
+                <li>Step 1 - If the element is the first element, assume that it is already sorted. Return 1.</li>
+                <li>Step 2 - Pick the next element, and store it separately in a key.</li>
+                <li>Step 3 - Now, compare the key with all elements in the sorted array.</li>
+                <li>Step 4 - If the element in the sorted array is smaller than the current element, then move to the next element. Else, shift greater elements in the array towards the right.</li>
+                <li>Step 5 - Insert the value.</li>
+                <li>Step 6 - Repeat until the array is sorted.</li>
+            </ul>
+        </div>
+    </body>
+        
+        
+
+</html>
