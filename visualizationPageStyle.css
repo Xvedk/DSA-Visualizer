@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+body {
+    font: 120% Verdana, Arial, Helvetica, sans-serif;
+    /* Increased text size and changed font style */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+
+.VisualizationMainPage #mainContent {
+    background: #FFFFFF;
+}
+
+.VisualizationMainPage #container {
+    background: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.VisualizationMainPage #algoControlSection {
+    background: #DDEEDD;
+    color: #000000;
+}
+
+.VisualizationMainPage #generalAnimationControlSection {
+    background: #DDEEDD;
+    color: #9400FF;
+}
+
+.VisualizationMainPage #header {
+    background: #9400FF;
+    color: white;
+    padding: 0 10px 0 20px;
+    text-align: center;
+}
+
+.VisualizationMainPage #header A:visited {
+    text-decoration:dashed;
+    color:white;
+}
+
+.VisualizationMainPage #header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.VisualizationMainPage #header A:link {
+    text-decoration: none;
+    color: white;
+}
+
+.VisualizationMainPage #container {
+    background: white;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.VisualizationMainPage #footer A:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.VisualizationMainPage #footer A:link {
+    text-decoration: none;
+    color: white;
+}
+
+.VisualizationMainPage #mainContent h1 {
+    padding: 0 20px;
+    background: #FFFFFF;
+    color: #c19edb;
+}
+
+.VisualizationMainPage #mainContent h2 {
+    padding: 0 20px;
+    background: #FFFFFF;
+    color: #c19edb;
+}
+
+.VisualizationMainPage #mainContent h3 {
+    padding: 0 20px;
+    background: #FFFFFF;
+    color: #c19edb;
+}
+
+.VisualizationMainPage #footer {
+    padding: 0 10px;
+    background: #9400FF;
+    color:white;
+}
+
+.VisualizationMainPage #footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+EM {
+    text-decoration:none;
+}

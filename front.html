@@ -1,64 +1,65 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>
-        Welcome to DSA learning
-    </title>
+    <title>Welcome to DSA learning</title>
+    
     <link rel="icon" href="fi.png" type="fav icon">
+    <link rel="stylesheet" href="Stack.css">
+    
     <style>
         body {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            border: 10px solid #610C9F; /* Border color */
-            border-radius: 20px; /* Border radius for outer circle */
-            overflow: hidden;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        h1 {
-            text-align: center;
-            color: #974EC3;
-            margin-bottom: 10px;
-            
-        }
-
-        hr {
-            width: 80%;
-            border: 1px solid #427D9D;
-           
-            
-        }
-
-        .buttons-container {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            margin-bottom: 20px;}
-
-        button {
-            background: #9400FF;
-            
+        .header {
+            background-color:  #9400FF;
             color: #FFFFFF;
-            padding: 10px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Crimson Text', serif;
         }
-        
 
-       
-        body {
-            margin: 0;
-            overflow: hidden;
+        .welcome {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .menu {
+            float: left;
+            line-height: 110%;
+            margin-left: -30px;
+            padding: 1em;
+            width: 178px;
+            background-color: #e8daf7;
+            height: 130vh; /* Set the height of the menu */
+            overflow-y: auto; /* Add vertical scrolling to the menu */
+            border-right: 2px solid #000; /* Add bold border to the right */
+            position: relative;
+        }   
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            overflow: hidden; /* Hide overflow */
+        }
+
+        .visualization-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #9400FF;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
         #chatbot-popup {
             position: fixed;
-            bottom: 20px;
+            bottom: 210px;
             right: 20px;
             background-color: lightgreen;
             border: 1px solid #ccc;
@@ -66,33 +67,190 @@
             padding: 10px;
             cursor: pointer;
         }
+
+        .heading {
+            text-align: left; /* Align heading to the left */
+            margin-left: 20px; /* Add left margin */
+        }
+
+        .line {
+            border-top: 1px solid black; /* Add a solid line */
+            margin-left: 20px; /* Adjust line position */
+            margin-bottom: 10px; /* Add space below the line */
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: -380px; /* Adjust the value as needed */
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: #9400FF;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 0.1px 0;
+            z-index: 4;
+            font-family: 'Crimson Text', serif;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             /* Add a white line above the footer content */
+            padding-top: 10px; /* Adjust as needed */
+        }
+        
+        .left-section {
+            text-align: left;
+            padding-left: 30px;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: larger;
+        }
+        
+        .middle-section {
+            flex-grow: 5;
+            font-family: 'Crimson Text', serif;
+            text-align: center;
+            padding-left:90px;
+        }
+        
+        .right-section {
+            text-align: right;
+            padding-right: 30px;
+        }
+        .social-icons {
+  margin-top: 10px;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  margin: 0 5px;
+}
+
+
+        
+        h4, h5 {
+            margin: 0;
+        }
+
+        ul {
+            text-align: left; /* Left align the list items */
+            padding: 0;
+            margin: 0; /* Add margin to remove default padding */
+        }
+
+        ul li {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 10px 0; /* Add some space between list items */
+            padding-left: 20px; /* Add padding on the left side */
+            text-align: left; /* Left-align the content */
+        }
+
+        ul li:before {
+            content: "•"; /* Add bullet point */
+            padding-right: 5px; /* Add space between bullet point and content */
+        }
     </style>
-    
 </head>
 <body>
 
+<div class="header">
+    <div class="welcome">Welcome to DSA Learning</div>
     
-    <h1>Welcome to Smart Learning</h1>
-    <hr>
-    <div class="buttons-container">
-        <button onclick="window.open('insert.html', '_blank')">Insertion Sort</button>
-        <button onclick="window.open('bubble.html', '_blank')">Bubble Sort</button>
-        <button onclick="window.open('quick.html', '_blank')">Quick Sort</button>
-        <button onclick="window.open('merge.html', '_blank')">Merge Sort</button>
-        <button onclick="window.open('heap.html', '_blank')">Heap Sort</button>
-    </div>
-    <hr>
-    <a href="sorting.html" class="visualization-button" target="_blank">Visualizer</a>
-    <div id="chatbot-popup" onclick="openChatbotPage()">
-        <h3>Chat with Assistant</h3>
-    </div>
-    <script>
-        // ... (Your existing JavaScript functions)
+</div>
 
-        // Function to open the chatbot.html in a new window
-        function openChatbotPage() {
-            window.open('chatbot.html', '_blank', 'width=600,height=400');
-        }
-    </script>
+<div class="menu">
+    <h3 class="heading">Menu</h3>
+    <div class="line"></div> <!-- Add line -->
+    <ul>
+        <li><a href="#basics">Basics</a></li>
+        <li><a href="#sorting">Sorting</a></li>
+        <li><a href="#graphs">Graph Algorithms</a></li>
+    </ul>
+</div>
+
+<div class="content" id="basics">
+    <h3 class="heading">Basics</h3>
+    <div class="line"></div> <!-- Add line -->
+    <ul>
+        <li><a href="StackArray.html" target="_blank">Stack: Array Implementation</a></li>
+        <li><a href="StackLL.html" target="_blank">Stack: Linked List Implementation</a></li>
+        <li><a href="QueueArray.html" target="_blank">Queues: Array Implementation</a></li>
+        <li><a href="QueueLL.html" target="_blank">Queues: Linked List Implementation</a></li>
+    </ul>
+</div>
+
+<div class="content" id="sorting">
+    <h3 class="heading">Sorting</h3>
+    <div class="line"></div> <!-- Add line -->
+    <div class="buttons-container">
+        <ul>
+            <li><a href="insert.html">Insertion Sort</a></li>
+            <li><a href="heap.html">Heap Sort</a></li>
+            <li><a href="quick.html">Quick Sort</a></li>
+            <li><a href="merge.html">Merge Sort</a></li>
+            <li><a href="bubble.html">Bubble Sort</a></li>
+            <li><a href="sorting.html" target="_blank">Visualizer</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content" id="graphs">
+    <h3 class="heading">Graph Algorithms</h3>
+    <div class="line"></div> <!-- Add line -->
+    <div class="buttons-container">
+        <ul>
+            <li><a href="BFS.html">Breadth-First Search</a></li>
+            <li><a href="DFS.html">Depth-First Search</a></li>
+            <li><a href="Dijkstra.html">Dijkstra's Shortest Path</a></li>
+            <li><a href="Kruskal.html">Kruskal Minimum Cost Spanning Tree </a></li>
+            <li><a href="Prim.html">Prim's Minimum Cost Spanning Tree</a></li>
+            
+        </ul>
+    </div>
+</div>
+<div id="chatbot-popup" onclick="openChatbotPage()">
+    <h3>Chat with Assistant</h3>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="left-section">
+            <h4>Easy</h4>
+            <h4>DSA</h4>
+            <h4>Learning</h4>
+        </div>
+        <div class="middle-section">
+            <p>Developer: Riya Maurya & Vedant Kumar</p>
+            <p>Email: vedantkumar0532@gmail.com</p> 
+            <p>Phone: +91-7007201209</p>
+        </div>
+        <div class="right-section">
+            <div class="social-icons">
+                
+                <a href="https://github.com/XRiya" class="icon github"><i class="fab fa-github"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                 <a href="https://www.linkedin.com/in/vedant-kumar30/" class="icon linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+                 <a href="https://www.facebook.com/" class="icon facebook"><i class="fab fa-facebook"></i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+
+                </div>
+        </div>
+    </div>
+
+
+        <div class="right-section">
+            <p>&copy;Copyright policy 2024</p> <!-- Adjust as needed -->
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+    function openChatbotPage() {
+        window.open('chatbot.html', '_blank', 'width=600,height=400');
+    }
+</script>
+
 </body>
 </html>
